@@ -1,0 +1,76 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #31a05d;
+}
+
+.text-hover {
+  display: none;
+}
+
+.common-button:hover .text-hover {
+  display: block;
+}
+
+.dark-theme {
+  background-color: black; 
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 34px;
+}
+
+.toggle-switch input {
+   width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.slider {
+  position: absolute;
+  cursor: all-scroll;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ebebeb;
+  border-radius: 30px;
+  box-shadow: inset 0px 5px 15px rgba(237, 209, 99, 0.1), inset 0px -5px 15px rgba(232, 181, 16, 0.2);
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  left: 3px;
+  top: 2px;
+  bottom: 2px;
+  background: linear-gradient(180deg, #ffcc89, #df1b1b);
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background: #242424;
+}
+
+input:checked + .slider:before {
+  transform: translateX(34px);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}

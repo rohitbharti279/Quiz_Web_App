@@ -1,0 +1,30 @@
+$color_1: white;
+
+.home-image {
+	position: relative;
+	cursor: pointer;
+	div {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		transition: transform 0.9s ease;
+		width: 16rem;
+		overflow: scroll;
+		background: linear-gradient( to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8) );
+		color: $color_1;
+		opacity: 0;
+	}
+	&:hover {
+		div {
+			opacity: 1;
+			transition: 1s;
+		}
+	}
+}
+.description {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}

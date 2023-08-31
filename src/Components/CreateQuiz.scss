@@ -1,0 +1,11 @@
+$background-color_1: #D5E6EF;
+
+.file-upload {
+	input {
+		position: absolute;
+		opacity: 0.0;
+	}
+	position: relative;
+	cursor: pointer;
+	background-color: $background-color_1;
+}
